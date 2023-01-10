@@ -513,6 +513,18 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.visible {
+  visibility: visible;
+}
+
+.static {
+  position: static;
+}
+
+.fixed {
+  position: fixed;
+}
+
 .absolute {
   position: absolute;
 }
@@ -536,6 +548,14 @@ video {
   left: 50%;
 }
 
+.top-0 {
+  top: 0px;
+}
+
+.left-0 {
+  left: 0px;
+}
+
 .-z-10 {
   z-index: -10;
 }
@@ -557,12 +577,40 @@ video {
   margin-right: auto;
 }
 
+.mt-8 {
+  margin-top: 2rem;
+}
+
+.block {
+  display: block;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.inline {
+  display: inline;
+}
+
 .flex {
   display: flex;
 }
 
+.table {
+  display: table;
+}
+
 .grid {
   display: grid;
+}
+
+.contents {
+  display: contents;
+}
+
+.hidden {
+  display: none;
 }
 
 .h-9 {
@@ -583,6 +631,10 @@ video {
 
 .h-32 {
   height: 8rem;
+}
+
+.h-full {
+  height: 100%;
 }
 
 .w-\[58rem\] {
@@ -672,6 +724,10 @@ video {
   border-radius: 9999px;
 }
 
+.border {
+  border-width: 1px;
+}
+
 .bg-\[\#ea2027\] {
   --tw-bg-opacity: 1;
   background-color: rgb(234 32 39 / var(--tw-bg-opacity));
@@ -691,8 +747,18 @@ video {
   background-color: #0006;
 }
 
-.bg-\[url\(\'https\:\/\/www\.limpothemes\.com\/images\/home_section\/background\.jpg\'\)\] {
-  background-image: url('https://www.limpothemes.com/images/home_section/background.jpg');
+.bg-gray-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(75 85 99 / var(--tw-bg-opacity));
+}
+
+.bg-gray-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(107 114 128 / var(--tw-bg-opacity));
+}
+
+.bg-\[url\(\'\.\/assets\/background\.jpg\'\)\] {
+  background-image: url('./assets/background.jpg');
 }
 
 .bg-cover {
@@ -734,6 +800,14 @@ video {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.pt-8 {
+  padding-top: 2rem;
+}
+
+.pt-12 {
+  padding-top: 3rem;
 }
 
 .text-center {
@@ -790,6 +864,15 @@ video {
   opacity: 0;
 }
 
+.blur {
+  --tw-blur: blur(8px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.filter {
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
 .transition-all {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -813,7 +896,7 @@ body {
 .deck {
   height: 26rem;
   position: relative;
-  perspective: 2000px;
+  perspective: 3000px;
   font-family: verdana;
 }
 
@@ -861,8 +944,12 @@ body {
   transform: rotateY(360deg);
 }
 
-.navbar-link {
-  height: 4.4rem;
+.frontPage {
+  display: none;
+}
+
+.visible {
+  display: initial;
 }
 
 .hover\:scale-125:hover {

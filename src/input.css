@@ -10,8 +10,8 @@ body {
 .deck {
   height: 26rem;
   position: relative;
-  -webkit-perspective: 2000px;
-  perspective: 2000px;
+  -webkit-perspective: 3000px;
+  perspective: 3000px;
   font-family: verdana;
 }
 .card {
@@ -60,6 +60,9 @@ body {
   -webkit-transform: rotateY(360deg);
   transform: rotateY(360deg);
 }
-.navbar-link {
-  height: 4.4rem;
+.frontPage {
+  display: none;
+}
+.visible {
+  display: initial;
 }
