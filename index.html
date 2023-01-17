@@ -7,12 +7,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
     <script defer src="./src/jquery.min.js"></script>
     <script defer src="./src/script.js"></script>
-    <!-- <script defer src="./src/background.js"></script> -->
     <link rel="stylesheet" href="./src/assets/output.css" />
     <title>Bekzod's Portfolio</title>
   </head>
   <body class="flex justify-center items-center">
-    <canvas class="absolute inset-0 -z-10" id="canvas"></canvas>
+    <canvas class="hidden md:block absolute inset-0 -z-10" id="canvas"></canvas>
 
     <div class="relative z-10 contain w-[58rem] mx-auto">
       <div class="flex flex-col gap-2">
@@ -25,7 +24,7 @@
                   <svg
                     fill="none"
                     stroke="#ea2027"
-                    class="social-link w-9 h-9 transition-all hover:scale-125 duration-200"
+                    class="social-linkS w-9 h-9 transition-all hover:scale-125 duration-200"
                     viewBox="0 0 50 50"
                   >
                     <path
@@ -46,10 +45,7 @@
               </li>
               <li class="twitter">
                 <a href="#">
-                  <svg
-                    class="social-link fill-[#ea2027] w-12 h-12 transition-all hover:scale-125 duration-200"
-                    viewBox="0 0 100 100"
-                  >
+                  <svg class="social-linkF w-12 h-12 transition-all hover:scale-125 duration-200" viewBox="0 0 100 100">
                     <path
                       d="M69.614,17.654h-39c-7.168,0-13,5.832-13,13v39c0,7.168,5.832,13,13,13h39c7.168,0,13-5.832,13-13v-39C82.614,23.485,76.783,17.654,69.614,17.654z M80.614,69.654c0,6.065-4.935,11-11,11h-39c-6.065,0-11-4.935-11-11v-39c0-6.065,4.935-11,11-11h39c6.065,0,11,4.935,11,11V69.654z"
                     ></path>
@@ -66,8 +62,9 @@
                 <a href="#">
                   <svg
                     fill="none"
-                    class="w-9 h-9 stroke-[#ea2027] transition-all hover:scale-125 duration-200"
+                    class="social-linkS w-9 h-9 transition-all hover:scale-125 duration-200"
                     xmlns="http://www.w3.org/2000/svg"
+                    stroke="#ea2027"
                     viewBox="0 0 50 50"
                   >
                     <path
@@ -104,7 +101,7 @@
               <li class="pinterest">
                 <a href="#">
                   <svg
-                    class="w-12 h-12 fill-[#ea2027] transition-all hover:scale-125 duration-200"
+                    class="social-linkF w-12 h-12 transition-all hover:scale-125 duration-200"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 100 100"
                   >
@@ -123,9 +120,9 @@
             </ul>
             <div class="cv">
               <a
-                href="./assets/bekzod's Resume.pdf"
+                href="./src/assets/bekzod's_Resume.pdf"
                 download="bekzod's Resume.pdf"
-                class="bg-[#ea2027] px-6 py-1 rounded-md text-white text-lg font-bold uppercase"
+                class="changeAnimaColor px-6 py-2 rounded-md text-white text-lg font-bold uppercase"
               >
                 Download cv
               </a>
@@ -137,98 +134,171 @@
           <div class="min-card col-span-1 rounded-md bg-gray-200">
             <ul class="navbar-ul grid grid-rows-6 grid-flow-col rounded-md overflow-hidden">
               <li>
-                <a data-id="0" class="navbar-link-a w-full relative group inline-block h-full" href="#portfolio">
-                  <div class="duration-300 hover:bg-[#ea2027] h-full navActive-div">
+                <a data-id="0" class="navbar-link-a w-full relative group inline-block h-full" href="#home">
+                  <div class="duration-300 changeAnimaColorHover h-full navActive-div">
                     <p
                       class="absolute top-1/2 left-1/2 translate-x-1/2 -translate-y-1/2 uppercase text-white text-[0.7rem] font-bold duration-300 opacity-0 group-hover:-translate-x-1/2 group-hover:opacity-100 navActive-p"
                     >
                       Home
                     </p>
-                    <img
+                    <svg
+                      enable-background="new 0 0 32 32"
+                      id="Editable-line"
                       class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-6 duration-300 group-hover:-translate-x-[400%] group-hover:opacity-0 navActive-img"
-                      src="./src/assets/nav-bar/3844470_home_house_icon.svg"
-                      alt="Portfolio"
-                    />
+                      stroke="#0ff0f0"
+                      version="1.1"
+                      viewBox="0 0 32 32"
+                      xml:space="preserve"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                    >
+                      <path
+                        d="  M27,29H5V17H3.235c-1.138,0-1.669-1.419-0.812-2.168L14.131,3.745c1.048-0.993,2.689-0.993,3.737,0l11.707,11.087  C30.433,15.58,29.902,17,28.763,17H27V29z"
+                        fill="none"
+                        id="XMLID_1_"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-miterlimit="10"
+                        stroke-width="2"
+                      />
+                      <path
+                        d="  M20,29h-8v-6c0-2.209,1.791-4,4-4h0c2.209,0,4,1.791,4,4V29z"
+                        fill="none"
+                        id="XMLID_2_"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-miterlimit="10"
+                        stroke-width="2"
+                      />
+                    </svg>
                   </div>
                 </a>
               </li>
               <li>
-                <a data-id="1" class="navbar-link-a w-full relative group inline-block h-full" href="#portfolio">
-                  <div class="duration-300 hover:bg-[#ea2027] h-full">
+                <a data-id="1" class="navbar-link-a w-full relative group inline-block h-full" href="#about">
+                  <div class="duration-300 changeAnimaColorHover h-full">
                     <p
                       class="absolute top-1/2 left-1/2 translate-x-1/2 -translate-y-1/2 uppercase text-white text-[0.7rem] font-bold duration-300 opacity-0 group-hover:-translate-x-1/2 group-hover:opacity-100"
                     >
                       About
                     </p>
-                    <img
+
+                    <svg
+                      data-name="Layer 1"
+                      fill="#0ff0f0"
                       class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-6 duration-300 group-hover:-translate-x-[400%] group-hover:opacity-0"
-                      src="./src/assets/nav-bar/4737448_account_user_avatar_profile_icon.svg"
-                      alt="Portfolio"
-                    />
+                      id="Layer_1"
+                      viewBox="0 0 48 48"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <title />
+                      <path d="M24,21A10,10,0,1,1,34,11,10,10,0,0,1,24,21ZM24,5a6,6,0,1,0,6,6A6,6,0,0,0,24,5Z" />
+                      <path
+                        d="M42,47H6a2,2,0,0,1-2-2V39A16,16,0,0,1,20,23h8A16,16,0,0,1,44,39v6A2,2,0,0,1,42,47ZM8,43H40V39A12,12,0,0,0,28,27H20A12,12,0,0,0,8,39Z"
+                      />
+                    </svg>
                   </div>
                 </a>
               </li>
               <li>
-                <a data-id="2" class="navbar-link-a w-full relative group inline-block h-full" href="#portfolio">
-                  <div class="duration-300 hover:bg-[#ea2027] h-full">
+                <a data-id="2" class="navbar-link-a w-full relative group inline-block h-full" href="#resume">
+                  <div class="duration-300 changeAnimaColorHover h-full">
                     <p
                       class="absolute top-1/2 left-1/2 translate-x-1/2 -translate-y-1/2 uppercase text-white text-[0.7rem] font-bold duration-300 opacity-0 group-hover:-translate-x-1/2 group-hover:opacity-100"
                     >
                       resume
                     </p>
-                    <img
+                    <svg
                       class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-6 duration-300 group-hover:-translate-x-[400%] group-hover:opacity-0"
-                      src="./src/assets/nav-bar/8674867_ic_fluent_hat_graduation_regular_icon.svg"
-                      alt="Portfolio"
-                    />
+                      height="24"
+                      viewBox="0 0 24 24"
+                      width="24"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="#0ff0f0"
+                    >
+                      <path
+                        d="M9.90878 3.69964C11.1832 2.88267 12.8168 2.88267 14.0912 3.69964L22.1548 8.86861C22.3689 9.0059 22.4989 9.24238 22.5 9.49677C22.5011 9.75116 22.3732 9.98876 22.1602 10.1279L19 12.1926V17.75C19 17.9122 18.9474 18.0701 18.85 18.2L18.8489 18.2014L18.8477 18.2031L18.8446 18.2071L18.8364 18.2178C18.8321 18.2233 18.8269 18.2298 18.8209 18.2373C18.8179 18.2411 18.8146 18.2452 18.8111 18.2495C18.7904 18.2751 18.7619 18.3095 18.7253 18.3513C18.6522 18.4348 18.5469 18.5483 18.4081 18.6816C18.1305 18.9481 17.7176 19.2948 17.1587 19.6387C16.0359 20.3297 14.3387 21 12 21C9.66127 21 7.96408 20.3297 6.8413 19.6387C6.2824 19.2948 5.86951 18.9481 5.59193 18.6816C5.45308 18.5483 5.34778 18.4348 5.27468 18.3513C5.23204 18.3025 5.1901 18.2531 5.15107 18.2014C5.14956 18.1994 5.15 18.2 5.15 18.2C5.05263 18.0701 5 17.9122 5 17.75V12.1926L3 10.8859V16.25C3 16.6642 2.66421 17 2.25 17C1.83579 17 1.5 16.6642 1.5 16.25V9.49997C1.5 9.22949 1.64318 8.99246 1.85788 8.86052L9.90878 3.69964ZM14.1194 15.3812C12.8317 16.2225 11.1683 16.2225 9.88058 15.3812L6.5 13.1725V17.4687C6.5368 17.5072 6.58034 17.5512 6.63073 17.5996C6.84143 17.8018 7.17072 18.0802 7.62745 18.3612C8.53592 18.9203 9.96373 19.5 12 19.5C14.0363 19.5 15.4641 18.9203 16.3726 18.3612C16.8293 18.0802 17.1586 17.8018 17.3693 17.5996C17.4197 17.5512 17.4632 17.5072 17.5 17.4687V13.1725L14.1194 15.3812ZM13.2817 4.96246C12.5006 4.46173 11.4994 4.46173 10.7183 4.96246L3.63041 9.506L10.701 14.1254C11.4902 14.6411 12.5098 14.6411 13.299 14.1254L20.3696 9.506L13.2817 4.96246Z"
+                      />
+                    </svg>
                   </div>
                 </a>
               </li>
               <li>
                 <a data-id="3" class="navbar-link-a w-full relative group inline-block h-full" href="#portfolio">
-                  <div class="duration-300 hover:bg-[#ea2027] h-full">
+                  <div class="duration-300 changeAnimaColorHover h-full">
                     <p
                       class="absolute top-1/2 left-1/2 translate-x-1/2 -translate-y-1/2 uppercase text-white text-[0.7rem] font-bold duration-300 opacity-0 group-hover:-translate-x-1/2 group-hover:opacity-100"
                     >
                       Portfolio
                     </p>
-                    <img
+                    <svg
                       class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-6 duration-300 group-hover:-translate-x-[400%] group-hover:opacity-0"
-                      src="./src/assets/nav-bar/2202274_album_binder_folder_portfolio_record_icon.svg"
-                      alt="Portfolio"
-                    />
+                      id="Layer_1"
+                      style="enable-background: new 0 0 48 48"
+                      version="1.1"
+                      fill="#0ff0f0"
+                      stroke="#0ff0f0"
+                      viewBox="0 0 48 48"
+                      xml:space="preserve"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                    >
+                      <g>
+                        <path
+                          d="M43,46H5c-1.7,0-3-1.3-3-3V15c0-1.7,1.3-3,3-3h8.5c1.4,0,2.6,0.9,2.9,2.3l0.2,1c0.2,0.5,0.6,0.8,1,0.8H43c1.7,0,3,1.3,3,3   v24C46,44.7,44.7,46,43,46z M5,14c-0.6,0-1,0.4-1,1v28c0,0.6,0.4,1,1,1h38c0.6,0,1-0.4,1-1V19c0-0.6-0.4-1-1-1H17.6   c-1.3,0-2.5-0.9-2.9-2.2l0-0.1l-0.2-1C14.3,14.3,14,14,13.5,14H5z"
+                        />
+                      </g>
+                    </svg>
                   </div>
                 </a>
               </li>
               <li>
-                <a data-id="4" class="navbar-link-a w-full relative group inline-block h-full" href="#portfolio">
-                  <div class="duration-300 hover:bg-[#ea2027] h-full">
+                <a data-id="4" class="navbar-link-a w-full relative group inline-block h-full" href="#blog">
+                  <div class="duration-300 changeAnimaColorHover h-full">
                     <p
                       class="absolute top-1/2 left-1/2 translate-x-1/2 -translate-y-1/2 uppercase text-white text-[0.7rem] font-bold duration-300 opacity-0 group-hover:-translate-x-1/2 group-hover:opacity-100"
                     >
                       Blog
                     </p>
-                    <img
+                    <svg
                       class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-6 duration-300 group-hover:-translate-x-[400%] group-hover:opacity-0"
-                      src="./src/assets/nav-bar/8675035_ic_fluent_edit_regular_icon.svg"
-                      alt="Portfolio"
-                    />
+                      height="24"
+                      viewBox="0 0 24 24"
+                      width="24"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="#0ff0f0"
+                    >
+                      <path
+                        d="M21.0303 2.96997C22.4278 4.36743 22.4278 6.63317 21.0303 8.03063L9.06201 19.999C8.78513 20.2758 8.44079 20.4757 8.06303 20.5787L2.94734 21.9739C2.38747 22.1266 1.87374 21.6128 2.02643 21.053L3.42162 15.9373C3.52465 15.5595 3.72447 15.2152 4.00135 14.9383L15.9697 2.96997C17.3671 1.57251 19.6329 1.57251 21.0303 2.96997ZM15.0002 6.06088L5.06201 15.999C4.96972 16.0913 4.90311 16.206 4.86877 16.332L3.81892 20.1814L7.66836 19.1315C7.79428 19.0972 7.90906 19.0306 8.00135 18.9383L17.9392 8.99988L15.0002 6.06088ZM17.0303 4.03063L16.0602 4.99988L18.9992 7.93988L19.9697 6.96997C20.7813 6.1583 20.7813 4.84231 19.9697 4.03063C19.158 3.21896 17.842 3.21896 17.0303 4.03063Z"
+                      />
+                    </svg>
                   </div>
                 </a>
               </li>
               <li>
-                <a data-id="5" class="navbar-link-a w-full relative group inline-block h-full" href="#portfolio">
-                  <div class="duration-300 hover:bg-[#ea2027] h-full">
+                <a data-id="5" class="navbar-link-a w-full relative group inline-block h-full" href="#contact">
+                  <div class="duration-300 changeAnimaColorHover h-full">
                     <p
                       class="absolute top-1/2 left-1/2 translate-x-1/2 -translate-y-1/2 uppercase text-white text-[0.7rem] font-bold duration-300 opacity-0 group-hover:-translate-x-1/2 group-hover:opacity-100"
                     >
                       Contact
                     </p>
-                    <img
+                    <svg
                       class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-6 duration-300 group-hover:-translate-x-[400%] group-hover:opacity-0"
-                      src="./src/assets/nav-bar/5340267_e_email_letter_mail_icon.svg"
-                      alt="Contact"
-                    />
+                      fill="#0ff0f0"
+                      viewBox="0 0 32 32"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <title />
+                      <g data-name="mail email e-mail letter" id="mail_email_e-mail_letter">
+                        <path
+                          d="M28,13a1,1,0,0,0-1,1v8a1,1,0,0,1-1,1H6a1,1,0,0,1-1-1V14a1,1,0,0,0-2,0v8a3,3,0,0,0,.88,2.12A3,3,0,0,0,6,25H26a3,3,0,0,0,2.12-.88A3,3,0,0,0,29,22V14A1,1,0,0,0,28,13Z"
+                        />
+                        <path
+                          d="M15.4,18.8a1,1,0,0,0,1.2,0L28.41,9.94a1,1,0,0,0,.3-1.23,3.06,3.06,0,0,0-.59-.83A3,3,0,0,0,26,7H6a3,3,0,0,0-2.12.88,3.06,3.06,0,0,0-.59.83,1,1,0,0,0,.3,1.23ZM6,9H26a.9.9,0,0,1,.28,0L16,16.75,5.72,9A.9.9,0,0,1,6,9Z"
+                        />
+                      </g>
+                    </svg>
                   </div>
                 </a>
               </li>
@@ -238,21 +308,21 @@
           <div class="deck rounded-md col-span-7">
             <div class="card rounded-md">
               <div class="front face rounded-md bg-cover bg-center relative">
-                <div class="frontPage visible pt-12" data-id="0">
+                <div class="frontPage home visible pt-12" data-id="0">
                   <div class="absolute top-0 left-0 w-full h-full">
                     <img class="w-full h-full object-cover brightness-50" src="./src/assets/background.jpg" alt="" />
                   </div>
                   <div class="flex flex-col items-center justify-center gap-3 absolute top-0 left-0 w-full h-full">
                     <div class="image w-32 h-32 rounded-full overflow-hidden">
                       <img
-                        class="rounded-full object-cover object-center"
-                        src="./src/assets/profile.jpg"
+                        class="w-full h-full brightness-75 rounded-full object-cover object-center"
+                        src="./src/assets/profile/profile.jpg"
                         alt="profile-img"
                       />
                     </div>
 
                     <div class="uppercase text-3xl font-semibold text-white">
-                      Bekzod <span class="text-[#ea2027]">Baratov</span>
+                      Bekzod <span class="changeAnimaColorText">Baratov</span>
                     </div>
 
                     <div class="text-white text-2xl">
@@ -265,7 +335,7 @@
                           <svg
                             fill="none"
                             stroke="#ea2027"
-                            class="social-link w-9 h-9 transition-all hover:scale-125 duration-200"
+                            class="social-linkS w-9 h-9 transition-all hover:scale-125 duration-200"
                             viewBox="0 0 50 50"
                           >
                             <path
@@ -287,7 +357,7 @@
                       <li class="twitter">
                         <a href="#">
                           <svg
-                            class="social-link fill-[#ea2027] w-12 h-12 transition-all hover:scale-125 duration-200"
+                            class="social-linkF w-12 h-12 transition-all hover:scale-125 duration-200"
                             viewBox="0 0 100 100"
                           >
                             <path
@@ -306,8 +376,9 @@
                         <a href="#">
                           <svg
                             fill="none"
-                            class="w-9 h-9 stroke-[#ea2027] transition-all hover:scale-125 duration-200"
+                            class="social-linkS w-9 h-9 transition-all hover:scale-125 duration-200"
                             xmlns="http://www.w3.org/2000/svg"
+                            stroke="#ea2027"
                             viewBox="0 0 50 50"
                           >
                             <path
@@ -344,7 +415,7 @@
                       <li class="pinterest">
                         <a href="#">
                           <svg
-                            class="w-12 h-12 fill-[#ea2027] transition-all hover:scale-125 duration-200"
+                            class="social-linkF w-12 h-12 transition-all hover:scale-125 duration-200"
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 100 100"
                           >
@@ -381,36 +452,41 @@
         </div>
       </div>
     </div>
+
     <div
-      class="colorAnima colorActive transition-all duration-300 absolute top-1/3 right-0 flex items-start divide-x-0 divide-gray-400"
+      class="colorAnima colorActive transition-all duration-300 absolute z-[999] top-1/3 right-0 flex items-start divide-x-0 divide-gray-400"
     >
-      <div class="childClick bg-stone-800 p-2 rounded-l cursor-pointer shadow-lg text-white">Color</div>
-      <div class="bg-stone-800 rounded-bl p-2 w-36 flex gap-2 flex-wrap shadow-lg">
+      <div class="childClick bg-violet-500 py-2 px-3 rounded-l cursor-pointer shadow-lg text-white">
+        <i class="fa-solid fa-gear animate-spin-slow text-lg"></i>
+      </div>
+      <div class="bg-gradient-to-r from-violet-500 to-fuchsia-500 rounded-bl p-2 w-36 flex gap-2 flex-wrap shadow-lg">
         <div
           color="#ea2027"
-          class="cursor-pointer border border-gray-200 circle w-6 h-6 rounded-full bg-[#ea2027]"
+          class="colorType cursor-pointer ring ring-transparent circle w-6 h-6 rounded-full bg-[#ea2027]"
         ></div>
         <div
           color="#0000ff"
-          class="cursor-pointer border border-gray-200 circle w-6 h-6 rounded-full bg-[#0000ff]"
+          class="colorType cursor-pointer ring ring-transparent circle w-6 h-6 rounded-full bg-[#0000ff]"
         ></div>
         <div
           color="#00ff00"
-          class="cursor-pointer border border-gray-200 circle w-6 h-6 rounded-full bg-[#00ff00]"
+          class="colorType cursor-pointer ring ring-transparent circle w-6 h-6 rounded-full bg-[#00ff00]"
         ></div>
         <div
           color="#ff4899"
-          class="cursor-pointer border border-gray-200 circle w-6 h-6 rounded-full bg-[#ff4899]"
+          class="colorType cursor-pointer ring ring-transparent circle w-6 h-6 rounded-full bg-[#ff4899]"
         ></div>
         <div
           color="#0ff0f0"
-          class="cursor-pointer border border-gray-200 circle w-6 h-6 rounded-full bg-[#0ff0f0]"
+          class="colorType cursor-pointer ring ring-blue-900 circle w-6 h-6 rounded-full bg-[#0ff0f0]"
         ></div>
         <div
           color="#f0f000"
-          class="cursor-pointer border border-gray-200 circle w-6 h-6 rounded-full bg-[#f0f000]"
+          class="colorType cursor-pointer ring ring-transparent circle w-6 h-6 rounded-full bg-[#f0f000]"
         ></div>
       </div>
     </div>
+
+    <script class="hidden md:block" defer src="./src/background.js"></script>
   </body>
 </html>

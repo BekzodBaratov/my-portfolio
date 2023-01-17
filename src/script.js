@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  let color = "#0ff0f0";
   const navbarUl = $(".min-card").innerHeight();
   $(".navbar-ul")
     .children()
@@ -30,12 +31,12 @@ $(document).ready(function () {
     const dataId = $(this).attr("data-id");
 
     $(".card").toggleClass("flipped");
-    $(this).find("div").addClass("navActive-div");
+    $(this).find("div").css("backgroundColor", color);
     $(this).find("p").addClass("navActive-p");
-    $(this).find("img").addClass("navActive-img");
-    $(this).parent().siblings().find("div").removeClass("navActive-div");
+    $(this).find("svg").addClass("navActive-img");
+    $(this).parent().siblings().find("div").css("backgroundColor", "transparent");
     $(this).parent().siblings().find("p").removeClass("navActive-p");
-    $(this).parent().siblings().find("img").removeClass("navActive-img");
+    $(this).parent().siblings().find("svg").removeClass("navActive-img");
 
     setTimeout(function () {
       $(".frontPage").each(function () {
@@ -49,7 +50,47 @@ $(document).ready(function () {
   });
 
   $(".colorAnima .childClick").click(function () {
-    console.log("hi");
     $(this).parent().toggleClass("colorActive");
   });
+
+  $(".colorType").click(function () {
+    color = $(this).attr("color");
+
+    $(".colorType").each(function () {
+      $(this).removeClass("ring-blue-900").addClass("ring-transparent");
+    });
+    $(this).removeClass("ring-transparent").addClass("ring-blue-900");
+    $(".changeAnimaColor").css("backgroundColor", color);
+    $(".changeAnimaColorText").css("color", color);
+    $(".social-linkS").attr("stroke", color);
+    $(".social-linkF").attr("fill", color);
+    $(".fa-gear").css("color", color);
+    $(".changeAnimaColorHover").each(function () {
+      if ($(this).children("p").hasClass("navActive-p")) $(this).css("backgroundColor", color);
+    });
+    $(".navbar-ul svg").each(function () {
+      if ($(this).attr("fill")) {
+        $(this).attr("fill", color);
+      }
+      if ($(this).attr("stroke")) {
+        $(this).attr("stroke", color);
+      }
+    });
+  });
+
+  $(".changeAnimaColor").css("backgroundColor", color);
+  $(".changeAnimaColorText").css("color", color);
+  $(".social-linkS").attr("stroke", color);
+  $(".social-linkF").attr("fill", color);
+  $(".fa-gear").css("color", color);
+  $(".changeAnimaColorHover").hover(
+    function () {
+      $(this).css("backgroundColor", color);
+    },
+    function () {
+      if (!$(this).children("p").hasClass("navActive-p")) {
+        $(this).css("backgroundColor", "transparent");
+      }
+    }
+  );
 });
