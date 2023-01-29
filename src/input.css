@@ -96,6 +96,12 @@ body {
 .colorActive {
   @apply translate-x-[9rem];
 }
+.main-section {
+  @apply uppercase h-20 text-5xl border font-bold border-dashed border-black mt-8 mx-12 flex items-center justify-center;
+}
+.portfolioImageItem {
+  @apply w-full h-full object-cover object-center overflow-hidden duration-200 hover:scale-110 hover:rotate-2 hover:brightness-50;
+}
 .cv .changeAnimaColor:hover {
   animation: animate 0.5s linear infinite;
   transform: translateX(0);

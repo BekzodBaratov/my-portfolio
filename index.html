@@ -8,6 +8,7 @@
     <script defer src="./src/jquery.min.js"></script>
     <script defer src="./src/script.js"></script>
     <link rel="stylesheet" href="./src/assets/output.css" />
+
     <title>Bekzod's Portfolio</title>
   </head>
   <body class="flex justify-center items-center">
@@ -316,7 +317,7 @@
                     <div class="image w-32 h-32 rounded-full overflow-hidden">
                       <img
                         class="w-full h-full brightness-75 rounded-full object-cover object-center"
-                        src="./src/assets/profile/profile.jpg"
+                        src="./src/assets/profile/me.jpg"
                         alt="profile-img"
                       />
                     </div>
@@ -325,9 +326,10 @@
                       Bekzod <span class="changeAnimaColorText">Baratov</span>
                     </div>
 
-                    <div class="text-white text-2xl">
+                    <div class="text-white text-2xl relative">
                       I'm a
                       <span class="job-anima"> web developer </span>
+                      <span class="absolute left-full inset-y-0 w-1 changeAnimaColor"></span>
                     </div>
                     <ul class="social flex gap-3 items-center">
                       <li class="facebook">
@@ -435,11 +437,7 @@
                   </div>
                 </div>
                 <div class="frontPage about" data-id="1">
-                  <div
-                    class="uppercase h-20 text-5xl border font-bold border-dashed border-black mt-8 mx-12 flex items-center justify-center"
-                  >
-                    About Me
-                  </div>
+                  <div class="main-section">About Me</div>
 
                   <div class="mx-12 mt-6">
                     <div class="section1 grid grid-cols-4 gap-3">
@@ -455,10 +453,10 @@
                         cupiditate fugiat voluptates itaque quasi optio, libero qui?
                       </div>
                       <div class="col-span-1 space-y-3">
-                        <p class="bg-yellow-500 rounded-sm py-1 text-center font-bold uppercase">2000.10.08</p>
-                        <p class="bg-yellow-500 rounded-sm py-1 text-center font-bold uppercase">Tashkent, Uzb</p>
-                        <p class="bg-yellow-500 rounded-sm py-1 text-center font-bold uppercase">23 years old</p>
-                        <p class="bg-yellow-500 rounded-sm py-1 text-center font-bold uppercase">unmerried</p>
+                        <p class="changeAnimaColor rounded-sm py-1 text-center font-bold uppercase">2000.10.08</p>
+                        <p class="changeAnimaColor rounded-sm py-1 text-center font-bold uppercase">Tashkent, Uzb</p>
+                        <p class="changeAnimaColor rounded-sm py-1 text-center font-bold uppercase">23 years old</p>
+                        <p class="changeAnimaColor rounded-sm py-1 text-center font-bold uppercase">unmerried</p>
                       </div>
                     </div>
                     <div class="section2 grid grid-cols-3 items-start gap-4 mt-8">
@@ -467,21 +465,21 @@
                       >
                         <div class="p-2 divide-y divide-dashed">
                           <div class="p-6">
-                            <h2 class="text-4xl font-bold text-yellow-500">1+</h2>
+                            <h2 class="text-4xl font-bold changeAnimaColorText">1+</h2>
                             <p class="uppercase">year experiaence</p>
                           </div>
                           <div class="p-6">
-                            <h2 class="text-4xl font-bold text-yellow-500">4+</h2>
+                            <h2 class="text-4xl font-bold changeAnimaColorText">4+</h2>
                             <p class="uppercase">happy clients</p>
                           </div>
                         </div>
                         <div class="p-2 divide-y divide-dashed">
                           <div class="p-6">
-                            <h2 class="text-4xl font-bold text-yellow-500">5+</h2>
+                            <h2 class="text-4xl font-bold changeAnimaColorText">5+</h2>
                             <p class="uppercase">Project done</p>
                           </div>
                           <div class="p-6">
-                            <h2 class="text-4xl font-bold text-yellow-500">30+</h2>
+                            <h2 class="text-4xl font-bold changeAnimaColorText">30+</h2>
                             <p class="uppercase">followers</p>
                           </div>
                         </div>
@@ -524,109 +522,109 @@
                         <div>
                           <h3 class="pb-2 uppercase">HTML</h3>
                           <div
-                            class="w-full h-2 bg-black relative before:absolute before:w-2 before:h-6 before:bg-yellow-500 before:left-[90%] before:top-[-0.5rem] after:absolute after:h-2 after:left-0 after:right-[10%] after:bg-yellow-500"
+                            class="w-full h-2 bg-black relative before:absolute before:w-2 before:h-6 changeAnimaColorBefore before:left-[90%] before:top-[-0.5rem] after:absolute after:h-2 after:left-0 after:right-[10%] after:changeAnimaColor"
                           ></div>
                         </div>
                         <div>
                           <h3 class="pb-2 uppercase">CSS</h3>
                           <div
-                            class="w-full h-2 bg-black relative before:absolute before:w-2 before:h-6 before:bg-yellow-500 before:left-[85%] before:top-[-0.5rem] after:absolute after:h-2 after:left-0 after:right-[15%] after:bg-yellow-500"
+                            class="w-full h-2 bg-black relative before:absolute before:w-2 before:h-6 changeAnimaColorBefore before:left-[85%] before:top-[-0.5rem] after:absolute after:h-2 after:left-0 after:right-[15%] after:changeAnimaColor"
                           ></div>
                         </div>
                         <div>
                           <h3 class="pb-2 uppercase">scss</h3>
                           <div
-                            class="w-full h-2 bg-black relative before:absolute before:w-2 before:h-6 before:bg-yellow-500 before:left-[55%] before:top-[-0.5rem] after:absolute after:h-2 after:left-0 after:right-[45%] after:bg-yellow-500"
+                            class="w-full h-2 bg-black relative before:absolute before:w-2 before:h-6 changeAnimaColorBefore before:left-[55%] before:top-[-0.5rem] after:absolute after:h-2 after:left-0 after:right-[45%] after:changeAnimaColor"
                           ></div>
                         </div>
                         <div>
                           <h3 class="pb-2 uppercase">tailwind css</h3>
                           <div
-                            class="w-full h-2 bg-black relative before:absolute before:w-2 before:h-6 before:bg-yellow-500 before:left-[90%] before:top-[-0.5rem] after:absolute after:h-2 after:left-0 after:right-[10%] after:bg-yellow-500"
+                            class="w-full h-2 bg-black relative before:absolute before:w-2 before:h-6 changeAnimaColorBefore before:left-[90%] before:top-[-0.5rem] after:absolute after:h-2 after:left-0 after:right-[10%] after:changeAnimaColor"
                           ></div>
                         </div>
                         <div>
                           <h3 class="pb-2 uppercase">bootstrap</h3>
                           <div
-                            class="w-full h-2 bg-black relative before:absolute before:w-2 before:h-6 before:bg-yellow-500 before:left-[40%] before:top-[-0.5rem] after:absolute after:h-2 after:left-0 after:right-[60%] after:bg-yellow-500"
+                            class="w-full h-2 bg-black relative before:absolute before:w-2 before:h-6 changeAnimaColorBefore before:left-[40%] before:top-[-0.5rem] after:absolute after:h-2 after:left-0 after:right-[60%] after:changeAnimaColor"
                           ></div>
                         </div>
                         <div>
                           <h3 class="pb-2 uppercase">JavaScript</h3>
                           <div
-                            class="w-full h-2 bg-black relative before:absolute before:w-2 before:h-6 before:bg-yellow-500 before:left-[95%] before:top-[-0.5rem] after:absolute after:h-2 after:left-0 after:right-[5%] after:bg-yellow-500"
+                            class="w-full h-2 bg-black relative before:absolute before:w-2 before:h-6 changeAnimaColorBefore before:left-[95%] before:top-[-0.5rem] after:absolute after:h-2 after:left-0 after:right-[5%] after:changeAnimaColor"
                           ></div>
                         </div>
                         <div>
                           <h3 class="pb-2 uppercase">canvas for game</h3>
                           <div
-                            class="w-full h-2 bg-black relative before:absolute before:w-2 before:h-6 before:bg-yellow-500 before:left-[75%] before:top-[-0.5rem] after:absolute after:h-2 after:left-0 after:right-[25%] after:bg-yellow-500"
+                            class="w-full h-2 bg-black relative before:absolute before:w-2 before:h-6 changeAnimaColorBefore before:left-[75%] before:top-[-0.5rem] after:absolute after:h-2 after:left-0 after:right-[25%] after:changeAnimaColor"
                           ></div>
                         </div>
                         <div>
                           <h3 class="pb-2 uppercase">jquery</h3>
                           <div
-                            class="w-full h-2 bg-black relative before:absolute before:w-2 before:h-6 before:bg-yellow-500 before:left-[60%] before:top-[-0.5rem] after:absolute after:h-2 after:left-0 after:right-[40%] after:bg-yellow-500"
+                            class="w-full h-2 bg-black relative before:absolute before:w-2 before:h-6 changeAnimaColorBefore before:left-[60%] before:top-[-0.5rem] after:absolute after:h-2 after:left-0 after:right-[40%] after:changeAnimaColor"
                           ></div>
                         </div>
                         <div>
                           <h3 class="pb-2 uppercase">git/github</h3>
                           <div
-                            class="w-full h-2 bg-black relative before:absolute before:w-2 before:h-6 before:bg-yellow-500 before:left-[50%] before:top-[-0.5rem] after:absolute after:h-2 after:left-0 after:right-[50%] after:bg-yellow-500"
+                            class="w-full h-2 bg-black relative before:absolute before:w-2 before:h-6 changeAnimaColorBefore before:left-[50%] before:top-[-0.5rem] after:absolute after:h-2 after:left-0 after:right-[50%] after:changeAnimaColor"
                           ></div>
                         </div>
                         <div>
                           <h3 class="pb-2 uppercase">vuejs</h3>
                           <div
-                            class="w-full h-2 bg-black relative before:absolute before:w-2 before:h-6 before:bg-yellow-500 before:left-[85%] before:top-[-0.5rem] after:absolute after:h-2 after:left-0 after:right-[15%] after:bg-yellow-500"
+                            class="w-full h-2 bg-black relative before:absolute before:w-2 before:h-6 changeAnimaColorBefore before:left-[85%] before:top-[-0.5rem] after:absolute after:h-2 after:left-0 after:right-[15%] after:changeAnimaColor"
                           ></div>
                         </div>
                         <div>
                           <h3 class="pb-2 uppercase">nuxtjs</h3>
                           <div
-                            class="w-full h-2 bg-black relative before:absolute before:w-2 before:h-6 before:bg-yellow-500 before:left-[55%] before:top-[-0.5rem] after:absolute after:h-2 after:left-0 after:right-[45%] after:bg-yellow-500"
+                            class="w-full h-2 bg-black relative before:absolute before:w-2 before:h-6 changeAnimaColorBefore before:left-[55%] before:top-[-0.5rem] after:absolute after:h-2 after:left-0 after:right-[45%] after:changeAnimaColor"
                           ></div>
                         </div>
                         <div>
                           <h3 class="pb-2 uppercase">vuex</h3>
                           <div
-                            class="w-full h-2 bg-black relative before:absolute before:w-2 before:h-6 before:bg-yellow-500 before:left-[65%] before:top-[-0.5rem] after:absolute after:h-2 after:left-0 after:right-[35%] after:bg-yellow-500"
+                            class="w-full h-2 bg-black relative before:absolute before:w-2 before:h-6 changeAnimaColorBefore before:left-[65%] before:top-[-0.5rem] after:absolute after:h-2 after:left-0 after:right-[35%] after:changeAnimaColor"
                           ></div>
                         </div>
                         <div>
                           <h3 class="pb-2 uppercase">pinia</h3>
                           <div
-                            class="w-full h-2 bg-black relative before:absolute before:w-2 before:h-6 before:bg-yellow-500 before:left-[80%] before:top-[-0.5rem] after:absolute after:h-2 after:left-0 after:right-[20%] after:bg-yellow-500"
+                            class="w-full h-2 bg-black relative before:absolute before:w-2 before:h-6 changeAnimaColorBefore before:left-[80%] before:top-[-0.5rem] after:absolute after:h-2 after:left-0 after:right-[20%] after:changeAnimaColor"
                           ></div>
                         </div>
                         <div>
                           <h3 class="pb-2 uppercase">reactjs</h3>
                           <div
-                            class="w-full h-2 bg-black relative before:absolute before:w-2 before:h-6 before:bg-yellow-500 before:left-[75%] before:top-[-0.5rem] after:absolute after:h-2 after:left-0 after:right-[25%] after:bg-yellow-500"
+                            class="w-full h-2 bg-black relative before:absolute before:w-2 before:h-6 changeAnimaColorBefore before:left-[75%] before:top-[-0.5rem] after:absolute after:h-2 after:left-0 after:right-[25%] after:changeAnimaColor"
                           ></div>
                         </div>
                         <div>
                           <h3 class="pb-2 uppercase">redux</h3>
                           <div
-                            class="w-full h-2 bg-black relative before:absolute before:w-2 before:h-6 before:bg-yellow-500 before:left-[40%] before:top-[-0.5rem] after:absolute after:h-2 after:left-0 after:right-[60%] after:bg-yellow-500"
+                            class="w-full h-2 bg-black relative before:absolute before:w-2 before:h-6 changeAnimaColorBefore before:left-[40%] before:top-[-0.5rem] after:absolute after:h-2 after:left-0 after:right-[60%] after:changeAnimaColor"
                           ></div>
                         </div>
                         <div>
                           <h3 class="pb-2 uppercase">threejs</h3>
                           <div
-                            class="w-full h-2 bg-black relative before:absolute before:w-2 before:h-6 before:bg-yellow-500 before:left-[30%] before:top-[-0.5rem] after:absolute after:h-2 after:left-0 after:right-[70%] after:bg-yellow-500"
+                            class="w-full h-2 bg-black relative before:absolute before:w-2 before:h-6 changeAnimaColorBefore before:left-[30%] before:top-[-0.5rem] after:absolute after:h-2 after:left-0 after:right-[70%] after:changeAnimaColor"
                           ></div>
                         </div>
                         <div>
                           <h3 class="pb-2 uppercase">nodejs</h3>
                           <div
-                            class="w-full h-2 bg-black relative before:absolute before:w-2 before:h-6 before:bg-yellow-500 before:left-[65%] before:top-[-0.5rem] after:absolute after:h-2 after:left-0 after:right-[35%] after:bg-yellow-500"
+                            class="w-full h-2 bg-black relative before:absolute before:w-2 before:h-6 changeAnimaColorBefore before:left-[65%] before:top-[-0.5rem] after:absolute after:h-2 after:left-0 after:right-[35%] after:changeAnimaColor"
                           ></div>
                         </div>
                         <div>
                           <h3 class="pb-2 uppercase">expressjs</h3>
                           <div
-                            class="w-full h-2 bg-black relative before:absolute before:w-2 before:h-6 before:bg-yellow-500 before:left-[65%] before:top-[-0.5rem] after:absolute after:h-2 after:left-0 after:right-[35%] after:bg-yellow-500"
+                            class="w-full h-2 bg-black relative before:absolute before:w-2 before:h-6 changeAnimaColorBefore before:left-[65%] before:top-[-0.5rem] after:absolute after:h-2 after:left-0 after:right-[35%] after:changeAnimaColor"
                           ></div>
                         </div>
                       </div>
@@ -637,19 +635,19 @@
                         <div>
                           <h3 class="pb-2 uppercase">Uzbek</h3>
                           <div
-                            class="w-full h-2 bg-black relative before:absolute before:w-2 before:h-6 before:bg-yellow-500 before:left-[90%] before:top-[-0.5rem] after:absolute after:h-2 after:left-0 after:right-[10%] after:bg-yellow-500"
+                            class="w-full h-2 bg-black relative before:absolute before:w-2 before:h-6 changeAnimaColorBefore before:left-[90%] before:top-[-0.5rem] after:absolute after:h-2 after:left-0 after:right-[10%] after:changeAnimaColor"
                           ></div>
                         </div>
                         <div>
                           <h3 class="pb-2 uppercase">English</h3>
                           <div
-                            class="w-full h-2 bg-black relative before:absolute before:w-2 before:h-6 before:bg-yellow-500 before:left-[30%] before:top-[-0.5rem] after:absolute after:h-2 after:left-0 after:right-[70%] after:bg-yellow-500"
+                            class="w-full h-2 bg-black relative before:absolute before:w-2 before:h-6 changeAnimaColorBefore before:left-[30%] before:top-[-0.5rem] after:absolute after:h-2 after:left-0 after:right-[70%] after:changeAnimaColor"
                           ></div>
                         </div>
                         <div>
                           <h3 class="pb-2 uppercase">Russian</h3>
                           <div
-                            class="w-full h-2 bg-black relative before:absolute before:w-2 before:h-6 before:bg-yellow-500 before:left-[40%] before:top-[-0.5rem] after:absolute after:h-2 after:left-0 after:right-[60%] after:bg-yellow-500"
+                            class="w-full h-2 bg-black relative before:absolute before:w-2 before:h-6 changeAnimaColorBefore before:left-[40%] before:top-[-0.5rem] after:absolute after:h-2 after:left-0 after:right-[60%] after:changeAnimaColor"
                           ></div>
                         </div>
                       </div>
@@ -657,11 +655,7 @@
                   </div>
                 </div>
                 <div class="frontPage resume" data-id="2">
-                  <div
-                    class="uppercase h-20 text-5xl border font-bold border-dashed border-black mt-8 mx-12 flex items-center justify-center"
-                  >
-                    resume
-                  </div>
+                  <div class="main-section">resume</div>
 
                   <div class="grid grid-cols-2 gap-y-4 mx-12 mt-6">
                     <div class="grid grid-cols-4">
@@ -673,7 +667,7 @@
                         />
                       </div>
                       <div class="col-span-3">
-                        <span class="bg-yellow-500 px-12 font-bold">2016</span>
+                        <span class="changeAnimaColor text-white py-1 px-12 font-bold">2016</span>
                         <h2 class="text-[.7rem] uppercase font-bold pt-2">Bachelor`s Degree</h2>
                         <h3 class="text-[.7rem] font-semibold pb-2">Tashkent State Technical University</h3>
                         <p class="text-[.7rem]">
@@ -687,7 +681,7 @@
                         <img class="w-16 aspect-square" src="./src/assets/resume/icons8-react-native-100.png" alt="" />
                       </div>
                       <div class="col-span-3">
-                        <span class="bg-yellow-500 px-12 font-bold">2016</span>
+                        <span class="changeAnimaColor text-white py-1 px-12 font-bold">2016</span>
                         <h2 class="text-[.7rem] uppercase font-bold pt-2">Bachelor`s Degree</h2>
                         <h3 class="text-[.7rem] font-semibold pb-2">Tashkent State Technical University</h3>
                         <p class="text-[.7rem]">
@@ -701,7 +695,7 @@
                         <img class="w-16 aspect-square" src="./src/assets/resume/icons8-циркуль-64.png" alt="" />
                       </div>
                       <div class="col-span-3">
-                        <span class="bg-yellow-500 px-12 font-bold">2016</span>
+                        <span class="changeAnimaColor text-white py-1 px-12 font-bold">2016</span>
                         <h2 class="text-[.7rem] uppercase font-bold pt-2">Bachelor`s Degree</h2>
                         <h3 class="text-[.7rem] font-semibold pb-2">Tashkent State Technical University</h3>
                         <p class="text-[.7rem]">
@@ -715,7 +709,7 @@
                         <img class="w-16 aspect-square" src="./src/assets/resume/icons8-чтение-64.png" alt="" />
                       </div>
                       <div class="col-span-3">
-                        <span class="bg-yellow-500 px-12 font-bold">2016</span>
+                        <span class="changeAnimaColor text-white py-1 px-12 font-bold">2016</span>
                         <h2 class="text-[.7rem] uppercase font-bold pt-2">Bachelor`s Degree</h2>
                         <h3 class="text-[.7rem] font-semibold pb-2">Tashkent State Technical University</h3>
                         <p class="text-[.7rem]">
@@ -726,17 +720,84 @@
                     </div>
                   </div>
                 </div>
-                <div class="frontPage" data-id="3">Portfolio</div>
-                <div class="frontPage" data-id="4">Blog</div>
-                <div class="frontPage" data-id="5">
-                  <div
-                    class="uppercase h-20 text-5xl border font-bold border-dashed border-black mt-8 mx-12 flex items-center justify-center"
-                  >
-                    Comtact Me
-                  </div>
-                  <div class="grid grid-cols-2 px-16 pt-4">
-                    <div></div>
-                    <div></div>
+                <div class="frontPage portfolio" data-id="3">
+                  <div class="main-section">Portfolio</div>
+                  <ul
+                    class="portfolio-nav flex gap-10 justify-center items-center uppercase py-5 text-black font-semibold [&>li]:cursor-pointer"
+                  ></ul>
+                  <ul class="portfolioImages mx-12 grid grid-cols-2 gap-3 pb-6">
+                    <!-- <img src="./src/assets/portfolio/portfolio_1.webp" alt="" /> -->
+                  </ul>
+                </div>
+                <div class="frontPage blog" data-id="4">
+                  <div class="main-section">Blog</div>
+                </div>
+                <div class="frontPage contact" data-id="5">
+                  <div class="main-section">Contact Me</div>
+                  <div class="px-12 pt-4 space-y-6">
+                    <div class="grid grid-cols-2 gap-3 text-sm justify-between">
+                      <a
+                        href="mailto:bekzodbaratov334@gmail.com"
+                        class="bg-white gap-2 w-full p-3 rounded-md flex items-center justify-center flex-col hover:-translate-x-2 hover:-translate-y-2 duration-200 hover:shadow-md hover:scale-105"
+                      >
+                        <div>
+                          <img class="h-14" src="./src/assets/contact/icons8-computer-64.png" alt="computer_icon" />
+                        </div>
+                        <p>bekzodbaratov334@gmail.com</p>
+                      </a>
+                      <a
+                        href="tel:+998944455537"
+                        class="bg-white gap-2 w-full p-3 rounded-md flex items-center justify-center flex-col hover:-translate-x-2 hover:-translate-y-2 duration-200 hover:shadow-md hover:scale-105"
+                      >
+                        <div>
+                          <img class="h-14" src="./src/assets/contact/icons8-phone-64.png" alt="phone_icon" />
+                        </div>
+                        <p>+99894 445 55 37</p>
+                      </a>
+                    </div>
+                    <div>
+                      <form class="flex flex-col" action="netlify">
+                        <div class="grid grid-cols-2 gap-3">
+                          <div class="mb-3">
+                            <label for="first_name" class="block mb-2 text-sm font-medium text-gray-900"
+                              >Your Name</label
+                            >
+                            <input
+                              type="text"
+                              id="first_name"
+                              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                              placeholder="John"
+                              required
+                            />
+                          </div>
+                          <div class="mb-3">
+                            <label for="email" class="block mb-2 text-sm font-medium text-gray-900">Your Email</label>
+                            <input
+                              type="email"
+                              id="email"
+                              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                              placeholder="john.doe@company.com"
+                              required
+                            />
+                          </div>
+                        </div>
+                        <div class="mb-3">
+                          <label for="message" class="block mb-2 text-sm font-medium text-gray-900">Your message</label>
+                          <textarea
+                            id="message"
+                            rows="4"
+                            class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500"
+                            placeholder="Write your thoughts here..."
+                          ></textarea>
+                        </div>
+                        <button
+                          type="button"
+                          class="text-white changeAnimaColor hover:scale-105 duration-200 self-start focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2"
+                        >
+                          Send Message
+                        </button>
+                      </form>
+                    </div>
                   </div>
                 </div>
               </div>

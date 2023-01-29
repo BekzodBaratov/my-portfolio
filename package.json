@@ -1,13 +1,26 @@
 {
   "name": "portfolios",
   "version": "1.0.0",
-  "description": "",
+  "description": "this is portfolio website",
   "main": "script.js",
   "scripts": {
-    "start": "tailwindcss -i ./src/input.css -o ./src/assets/output.css --watch"
+    "tail": "tailwindcss -i ./src/input.css -o ./src/assets/output.css --watch"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "html",
+    "css",
+    "javascript",
+    "JQuery",
+    "tailwindcss",
+    "portfolio",
+    "responsive",
+    "single page",
+    "canvas",
+    "multi color",
+    "clean",
+    "clean code"
+  ],
+  "author": "Bekod Baratov",
   "license": "ISC",
   "devDependencies": {
     "tailwindcss": "^3.2.4"
