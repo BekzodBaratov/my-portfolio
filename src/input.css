@@ -102,6 +102,9 @@ body {
 .portfolioImageItem {
   @apply w-full h-full object-cover object-center overflow-hidden duration-200 hover:scale-110 hover:rotate-2 hover:brightness-50;
 }
+.blogs li:hover img {
+  @apply scale-110 rotate-2 brightness-50;
+}
 .cv .changeAnimaColor:hover {
   animation: animate 0.5s linear infinite;
   transform: translateX(0);

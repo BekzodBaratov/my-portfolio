@@ -13,23 +13,62 @@ $(document).ready(function () {
     { name: "Games", active: false },
   ];
   const portfolioImageArr = [
-    { id: 1, name: "portfolio_1.webp", link: "/", tag: "website" },
-    { id: 2, name: "portfolio_2.webp", link: "/", tag: "website" },
-    { id: 3, name: "portfolio_3.webp", link: "/", tag: "website" },
-    { id: 4, name: "portfolio_4.webp", link: "/", tag: "game" },
-    { id: 5, name: "portfolio_5.webp", link: "/", tag: "website" },
-    { id: 6, name: "portfolio_6.webp", link: "/", tag: "website" },
-    { id: 7, name: "portfolio_7.webp", link: "/", tag: "website" },
-    { id: 8, name: "portfolio_8.webp", link: "/", tag: "website" },
-    { id: 9, name: "portfolio_9.webp", link: "/", tag: "website" },
-    { id: 10, name: "portfolio_10.webp", link: "/", tag: "website" },
-    { id: 11, name: "portfolio_game_1.png", link: "/", tag: "game" },
-    { id: 12, name: "portfolio_game_2.webp", link: "/", tag: "game" },
-    { id: 13, name: "portfolio_game_3.webp", link: "/", tag: "game" },
-    { id: 14, name: "portfolio_game_4.webp", link: "/", tag: "game" },
-    { id: 15, name: "portfolio_game_5.webp", link: "/", tag: "game" },
-    { id: 16, name: "portfolio_game_6.webp", link: "/", tag: "game" },
+    { id: 1, name: "portfolio_1.webp", link: "https://prezidentschoolsite.netlify.app/", tag: "website" },
+    { id: 2, name: "portfolio_2.webp", link: "https://bekzodbaratov.github.io/Magic-Edu", tag: "website" },
+    { id: 3, name: "portfolio_3.webp", link: "https://bekzodbaratov.github.io/Dora", tag: "website" },
+    { id: 4, name: "portfolio_4.webp", link: "https://bekzodbaratov.github.io/3d-anima-blocks", tag: "game" },
+    { id: 5, name: "portfolio_5.webp", link: "https://bekzodbaratov.github.io/github_user_search", tag: "website" },
+    { id: 6, name: "portfolio_6.webp", link: "https://bekzodbaratov.github.io/MagicNext-grid", tag: "website" },
+    { id: 7, name: "portfolio_7.webp", link: "https://bekzodbaratov.github.io/bank_system", tag: "website" },
+    { id: 8, name: "portfolio_8.webp", link: "https://monumental-gingersnap-0ac7eb.netlify.app", tag: "website" },
+    { id: 9, name: "portfolio_9.webp", link: "https://bekzodbaratov.github.io/Magic-CV", tag: "website" },
+    { id: 10, name: "portfolio_10.webp", link: "https://bekzodbaratov.github.io/World-Meals-search", tag: "website" },
+    { id: 11, name: "portfolio_game_1.png", link: "https://pacman-game-omega.vercel.app", tag: "game" },
+    { id: 12, name: "portfolio_game_2.webp", link: "https://bekzodbaratov.github.io/Planet-Defence", tag: "game" },
+    { id: 13, name: "portfolio_game_3.webp", link: "https://bekzodbaratov.github.io/Snake-Game", tag: "game" },
+    { id: 14, name: "portfolio_game_4.webp", link: "https://bekzodbaratov.github.io/Dire_Game_Js", tag: "game" },
+    { id: 15, name: "portfolio_game_5.webp", link: "https://bekzodbaratov.github.io/Tower-Blocks", tag: "game" },
+    { id: 16, name: "portfolio_game_6.webp", link: "https://bekzodbaratov.github.io/Canvas-Mousemove", tag: "game" },
   ];
+  const blog = [
+    {
+      id: 1,
+      img: "1.jpg",
+      name: "Group Of People Watching On Laptop",
+      user: "admin",
+      link: "#",
+      date: "January 7, 2023",
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ultrices felis in orci condimentum, at viverra",
+    },
+    {
+      id: 2,
+      img: "2.jpg",
+      name: "A Handsam Man Holding A Book For Study",
+      user: "admin",
+      link: "#",
+      date: "January 7, 2023",
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ultrices felis in orci condimentum, at viverra",
+    },
+    {
+      id: 3,
+      img: "3.jpg",
+      name: "Photo Of Group Of People In A Meeting",
+      user: "admin",
+      link: "#",
+      date: "January 7, 2023",
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ultrices felis in orci condimentum, at viverra",
+    },
+    {
+      id: 4,
+      img: "2.jpg",
+      name: "Group Of People Watching On Laptop",
+      user: "admin",
+      link: "#",
+      date: "January 7, 2023",
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ultrices felis in orci condimentum, at viverra",
+    },
+  ];
+
   const jobs = ["web developer", "freelancer", "front-end developer"];
   const length = jobs.join("").length;
   let i = 0;
@@ -78,6 +117,7 @@ $(document).ready(function () {
 
   appendFuncLi(".portfolio-nav", portfolioArr);
   appendImageLi(".portfolioImages", shuffle(portfolioImageArr));
+  blogList(".blogs", shuffle(blog));
 
   // change color
   $(".colorType").click(function () {
@@ -151,6 +191,8 @@ $(document).ready(function () {
   );
 });
 
+///////////////////////////////////////////////////////////////////////////
+
 function appendFuncLi(tag, val) {
   let html = "";
   for (var i = 0; i < val.length; i++) {
@@ -163,9 +205,37 @@ function appendImageLi(tag, val) {
   for (let i = 0; i < val.length; i++) {
     html += `
     <li key="${val[i].id}" class="list-none overflow-hidden">
-      <a href="${val[i].link}">
+      <a href="${val[i].link}" target="_blank" rel="noopener noreferrer">
         <image src='./src/assets/portfolio/${val[i].name}' class="portfolioImageItem" alt="${val[i].tag}_image" />
       </a>
+    </li>`;
+  }
+  $(tag).html(html);
+}
+function blogList(tag, val) {
+  let html = "";
+  for (let i = 0; i < val.length; i++) {
+    html += `
+    <li key="${val.id}">
+      <div class="bg-white flex flex-col shadow-md">
+        <div class="w-full list-none overflow-hidden">
+          <img src="./src/assets/blog/${val[i].img}" class="portfolioImageItem" alt="blog_image" />
+        </div>
+        <div class="py-5 px-3 space-y-2 ">
+          <div class="text-xs flex items-center gap-5 text-gray-600">
+            <div class="date space-x-2">
+              <i class="fa fa-calendar changeAnimaColorText"></i>
+              ${val[i].date}
+            </div>
+            <div class="user space-x-2">
+              <i class="fa fa-user changeAnimaColorText"></i>
+              ${val[i].user}
+            </div>
+          </div>
+          <h2 class="font-semibold text-lg">${val[i].name}</h2>
+          <p class="text-gray-600 text-sm">${val[i].desc}</p>
+        </div>
+      </div>
     </li>`;
   }
   $(tag).html(html);
