@@ -1940,36 +1940,6 @@ video {
   background-color: rgb(139 92 246 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#ea2027\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(234 32 39 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#0000ff\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 255 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#00ff00\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 255 0 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#ff4899\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 72 153 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#0ff0f0\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(15 240 240 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#f0f000\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(240 240 0 / var(--tw-bg-opacity));
-}
-
 .bg-\[rgb\(255\2c 0\2c 0\)\] {
   --tw-bg-opacity: 1;
   background-color: rgb(255 0 0 / var(--tw-bg-opacity));
@@ -2659,13 +2629,13 @@ video {
   --tw-ring-inset: inset;
 }
 
-.ring-transparent {
-  --tw-ring-color: transparent;
-}
-
 .ring-blue-900 {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(30 58 138 / var(--tw-ring-opacity));
+}
+
+.ring-transparent {
+  --tw-ring-color: transparent;
 }
 
 .blur {
