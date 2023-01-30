@@ -1,5 +1,7 @@
 $(document).ready(function () {
   let color = "#0ff0f0";
+  let colorArr = ["#ea2027", "#0000ff", "#00ff00", "#ff4899", "#0ff0f0", "#f0f000"];
+  colorsFunc(".colors", colorArr);
   const navbarUl = $(".min-card").innerHeight();
   $(".navbar-ul")
     .children()
@@ -237,6 +239,17 @@ function blogList(tag, val) {
         </div>
       </div>
     </li>`;
+  }
+  $(tag).html(html);
+}
+function colorsFunc(tag, val) {
+  html = "";
+  for (var i = 0; i < val.length; i++) {
+    html += `
+    <div
+      color="${val[i]}"
+      class="colorType cursor-pointer ring ring-transparent circle w-6 h-6 rounded-full bg-[${val[i]}]"
+    ></div>`;
   }
   $(tag).html(html);
 }
